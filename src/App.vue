@@ -1,15 +1,9 @@
 <template>
+  <v-app>
   <div id="app">
+    <v-card class="overflow-hidden">
     <div id="nav">
-      <v-toolbar color="#83B4B3" dark>
-    <!-- <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon> -->
-        <v-tabs v-model="tab"> 
-        <v-tab left to="/">Kayla Frankum</v-tab>
-        <v-spacer></v-spacer>
-        <v-tab right grow to="/resume">Resume</v-tab>
-      </v-tabs>
-    
-      </v-toolbar>
+      <Header />
     </div>
 
     <div id="main">
@@ -30,11 +24,16 @@
       </v-btn>
       </v-col>
     </v-footer>
+    </v-card>
   </div>
+  </v-app>
 </template>
 <script>
 
+import Header from './components/Header.vue'
+
   export default{
+
     data: () => ({
       tab: null,
       icons: [
@@ -43,7 +42,10 @@
         'mdi-linkedin',
         'mdi-instagram',
       ]
-    })
+    }),
+    components: {
+      Header
+    }
   }
 
 </script>
