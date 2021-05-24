@@ -11,7 +11,13 @@
             <p>Hi My Name is</p>
             <h1>Kayla Frankum</h1>
             <h2>I like to build things.</h2>
-            <p></p>
+            <p>I have a diverse background in engineering and teaching.
+              Currently I work as a project manager for an IT team that
+              supports HRIS software solutions. I like living where
+              technology meets teaching, where the two join to solve real
+              human dilemmas. I like learning how things work. I am a bootcamp
+              grad, looking to move into a more technical role. I want to build meaningful
+               tools that improve the user experience.</p>
             <h4 id="slogan">"I am not what happened to me. I am what I choose to become."</h4>
           </v-col>
 
