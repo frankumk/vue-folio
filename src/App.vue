@@ -2,28 +2,41 @@
   <v-app>
   <div id="app">
     <v-card class="overflow-hidden">
-    <div id="nav">
-      <Header />
-    </div>
+      <div id="nav">
+        <Header />
+      </div>
 
-    <div id="main">
-      <router-view/>
-    </div>
+      <v-sheet
+        id="scrolling-techniques-3"
+        class="overflow-y-auto"
+        max-height="1000"
+        color="grey lighten-3"
+      >
+        <v-container style="height: 1000px;">
+          <div id="main">
+            <About />
+            <Projects />
+          </div>
 
-    <v-footer color="#83B4B3">
-      <v-col
-        class="text-center"
-      >
-      <v-btn
-        v-for="icon in icons"
-        :key="icon"
-        class="mx-4"
-        icon
-      >
-      <v-icon color="black">{{ icon }}</v-icon>
-      </v-btn>
-      </v-col>
-    </v-footer>
+        </v-container>
+        
+        <v-footer color="#83B4B3">
+          <v-col
+            class="text-center"
+          >
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            icon
+          >
+        <v-icon color="black">{{ icon }}</v-icon>
+        </v-btn>
+        </v-col>
+      </v-footer>
+    </v-sheet>
+
+    
     </v-card>
   </div>
   </v-app>
@@ -31,6 +44,8 @@
 <script>
 
 import Header from './components/Header.vue'
+import About from './components/About.vue'
+import Projects from './components/Projects.vue'
 
   export default{
 
@@ -44,7 +59,9 @@ import Header from './components/Header.vue'
       ]
     }),
     components: {
-      Header
+      Header,
+      About,
+      Projects
     }
   }
 
@@ -70,5 +87,9 @@ import Header from './components/Header.vue'
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#main{
+  padding-top: 300px;
 }
 </style>
