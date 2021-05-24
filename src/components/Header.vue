@@ -6,7 +6,7 @@
       dark
       shrink-on-scroll
       prominent
-      src="require('~/assets/HulkSunset.jpg')"
+      src="../assets/HulkSunset.jpg"
       fade-img-on-scroll
       scroll-target="#scrolling-techniques-3"
     >
