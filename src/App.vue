@@ -19,24 +19,25 @@
           </div>
 
         </v-container>
-        
-        <v-footer color="#83B4B3">
+    </v-sheet>
+
+     <v-footer color="#83B4B3">
           <v-col
             class="text-center"
           >
           <v-btn
-            v-for="icon in icons"
-            :key="icon"
+            v-for="contact in contacts"
+            :key="item"
             class="mx-4"
             icon
+            :href="contact.link"
+            target="_blank"
           >
-        <v-icon color="black">{{ icon }}</v-icon>
+        <v-icon color="black">{{ contact.icon }}</v-icon>
         </v-btn>
         </v-col>
       </v-footer>
-    </v-sheet>
 
-    
     </v-card>
   </div>
   </v-app>
@@ -51,12 +52,15 @@ import Projects from './components/Projects.vue'
 
     data: () => ({
       tab: null,
-      icons: [
-        'mdi-email',
-        'mdi-github',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ]
+      contacts: {
+        email: {icon: 'mdi-email', link: "mailto:frankumk@gmail.com"},
+        github: {icon: 'mdi-github', link: "https://github.com/frankumk"},
+        //https://github.com/frankumk
+        linkedin: {icon: 'mdi-linkedin', link: "https://www.linkedin.com/in/kayla-frankum/"},
+        //https://www.linkedin.com/in/kayla-frankum/
+        instagram: {icon: 'mdi-instagram', link: "https://www.instagram.com/kaylock_may/"}
+        //https://www.instagram.com/kaylock_may/
+      }
     }),
     components: {
       Header,

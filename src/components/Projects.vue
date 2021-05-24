@@ -2,7 +2,7 @@
   <div>
   <h1>Projects</h1>
 
-  <v-card v-for="project in projects" class="project-card">
+  <v-card v-for="project in projects" class="project-card" :key="project.name">
     <v-row>
       <v-col cols="3">
         <img class="project-img" :src="project.img" />
@@ -22,7 +22,7 @@ const faker = require('faker')
 
     data: () => ({
       projects: [
-          { name: 'Birthday Tracker', img: './assets/JoshuaT.jpg'} ,
+          { name: 'Birthday Tracker', img: `${faker.image.nature()}`} ,
           { name: 'Node.js To Do List', img: `${faker.image.nature()}` },
           { name: 'Full Stack Student Database', img: `${faker.image.nature()}`}
         ]

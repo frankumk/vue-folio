@@ -41,7 +41,7 @@
         <v-tabs align-with-title>
           <v-tab>About</v-tab>
           <v-tab>Projects</v-tab>
-          <v-tab>Resume</v-tab>
+          <v-tab href=".../public/Resume.pdf" target="_blank">Resume</v-tab>
         </v-tabs>
       </template>
 

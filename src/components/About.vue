@@ -10,7 +10,9 @@
           <v-col cols="6">
             <p>Hi My Name is</p>
             <h1>Kayla Frankum</h1>
-            <h4 id="slogan">I am not what happened to me. I am what I choose to become.</h4>
+            <h2>I like to build things.</h2>
+            <p></p>
+            <h4 id="slogan">"I am not what happened to me. I am what I choose to become."</h4>
           </v-col>
 
           <v-col cols="6">
