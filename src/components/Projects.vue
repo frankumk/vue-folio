@@ -1,10 +1,18 @@
 <template>
+  <div>
+  <h1>Projects</h1>
 
-  <!-- <div v-for="project in projects" class="project-card">
-    <img class="project-img" :src="project.img" />
-    <h3>{{ project.name }}</h3>
-  </div> -->
-  
+  <v-card v-for="project in projects" class="project-card">
+    <v-row>
+      <v-col cols="3">
+        <img class="project-img" :src="project.img" />
+      </v-col>
+      <v-col cols="3">
+        <h3>{{ project.name }}</h3>
+      </v-col>
+    </v-row>
+  </v-card>
+  </div>
 </template>
 
 <script>
