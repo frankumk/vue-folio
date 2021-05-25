@@ -27,7 +27,7 @@
           >
           <v-btn
             v-for="icon in icons"
-            :key="item"
+            :key="icon.alt"
             class="mx-4"
             icon
             :href="icon.link"

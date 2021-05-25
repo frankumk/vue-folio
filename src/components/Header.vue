@@ -29,7 +29,7 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-mail</v-icon>
+        <v-icon>mdi-email</v-icon>
       </v-btn>
 
       <v-btn icon>
@@ -41,6 +41,7 @@
         <v-tabs align-with-title>
           <v-tab>About</v-tab>
           <v-tab>Projects</v-tab>
+          <v-tab>Skills</v-tab>
           <v-tab href=".../public/Resume.pdf" target="_blank">Resume</v-tab>
         </v-tabs>
       </template>

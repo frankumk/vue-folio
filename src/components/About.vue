@@ -6,12 +6,12 @@
         cols="12"
         md="4"
       ></v-col>
-        <v-row class="ma-n3">
+        <v-row class="ma-n3" align="center" justify="center">
           <v-col cols="6">
             <p>Hi My Name is</p>
             <h1>Kayla Frankum</h1>
             <h2>I like to build things.</h2>
-            <p>I have a diverse background in engineering and teaching.
+            <p>I am a web developer. I have a diverse background in engineering and teaching.
               Currently I work as a project manager for an IT team that
               supports HRIS software solutions. I like living where
               technology meets teaching, where the two join to solve real
