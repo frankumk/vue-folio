@@ -18,7 +18,7 @@
         ></v-img>
       </template>
 
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon md></v-app-bar-nav-icon>
 
       <v-app-bar-title></v-app-bar-title>
 
@@ -54,6 +54,7 @@
 </template>
 
 <script>
+
   export default{
     methods: {
       scroll(id) {
@@ -65,7 +66,7 @@
         const pdf = require('../assets/Resume.pdf');
         window.open(pdf);
       }
-    }
+    },
   }
 
 </script>
@@ -77,5 +78,3 @@
 
 </style>
 
-
-@click="openResume()"

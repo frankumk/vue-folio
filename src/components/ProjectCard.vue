@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="3">
+  <v-col md="3" sm="6">
       <v-card
         height="100%"
         hover

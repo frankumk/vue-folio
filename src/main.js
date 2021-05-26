@@ -6,6 +6,7 @@ import vuetify from './plugins/vuetify';
 import Vuetify from 'vuetify'
 Vue.use(Vuetify)
 
+
 Vue.config.productionTip = false
 
 new Vue({
