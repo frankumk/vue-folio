@@ -16,7 +16,6 @@
 </template>
 
 <script>
-const faker = require('faker')
 import ProjectCard from './ProjectCard'
 
   export default{

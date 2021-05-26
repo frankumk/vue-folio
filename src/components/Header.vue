@@ -18,7 +18,41 @@
         ></v-img>
       </template>
 
-      <v-app-bar-nav-icon md></v-app-bar-nav-icon>
+
+      <v-menu
+        bottom
+        right
+        class="hidden-sm-and-up"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            dark
+            icon
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-app-bar-nav-icon class="hidden-sm-and-up"></v-app-bar-nav-icon>
+          </v-btn>
+        </template>
+
+            <v-list>
+              <v-list-item>
+                <v-list-item-title @click="scroll('intro')">ABOUT</v-list-item-title>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>
+                <v-list-item-title @click="scroll('projects-title')">PROJECTS</v-list-item-title>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>
+                <v-list-item-title @click="scroll('skills-title')">SKILLS</v-list-item-title>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>
+                <v-list-item-title@click="openResume" target="_blank">RESUME</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
 
       <v-app-bar-title></v-app-bar-title>
 
@@ -39,11 +73,11 @@
 
 
       <template v-slot:extension>
-        <v-tabs align-with-title>
+        <v-tabs align-with-title class="hidden-xs-only">
           <v-tab @click="scroll('intro')">About</v-tab>
           <v-tab @click="scroll('projects-title')">Projects</v-tab>
           <v-tab @click="scroll('skills-title')">Skills</v-tab>
-          <v-tab @click="openResume()" target="_blank">Resume</v-tab>
+          <v-tab @click="openResume" target="_blank">Resume</v-tab>
         </v-tabs>
       </template>
 
@@ -56,6 +90,7 @@
 <script>
 
   export default{
+
     methods: {
       scroll(id) {
         const element = document.getElementById(id);
