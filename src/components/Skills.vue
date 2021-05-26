@@ -1,6 +1,7 @@
 <template>
 <div>
-  <h1>Skills</h1>
-  <p>Javascript, React/Redux, Vue/Vuex, Node, Express, HTML, CSS, Mocha/Chai, SQL, PostgreSQL, Git, Wordpress, Docker, Project Management</p>
+  <h1 id="skills-title">SKILLS</h1>
+  <p>Portfolio Built Using Vue and Vuetify</p>
+  <v-img src="../assets/WordCloud2.png" alt="Skill Wordcloud" />
 </div>
 </template>

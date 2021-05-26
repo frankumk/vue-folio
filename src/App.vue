@@ -83,12 +83,9 @@ import Skills from './components/Skills.vue'
 
 #nav {
   padding: 30px;
+  font-weight: bold;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
 #nav a.router-link-exact-active {
   color: #42b983;

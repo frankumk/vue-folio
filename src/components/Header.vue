@@ -24,25 +24,26 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <!-- <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+      </v-btn> -->
 
-      <v-btn icon>
+      <v-btn
+        icon
+        target="_blank"
+        href="mailto:frankumk@gmail.com"
+      >
         <v-icon>mdi-email</v-icon>
       </v-btn>
 
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
 
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab>About</v-tab>
-          <v-tab>Projects</v-tab>
-          <v-tab>Skills</v-tab>
-          <v-tab href=".../public/Resume.pdf" target="_blank">Resume</v-tab>
+          <v-tab @click="scroll('intro')">About</v-tab>
+          <v-tab @click="scroll('projects-title')">Projects</v-tab>
+          <v-tab @click="scroll('skills-title')">Skills</v-tab>
+          <v-tab @click="openResume()" target="_blank">Resume</v-tab>
         </v-tabs>
       </template>
 
@@ -53,7 +54,19 @@
 </template>
 
 <script>
-  export default{}
+  export default{
+    methods: {
+      scroll(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      },
+
+      openResume() {
+        const pdf = require('../assets/Resume.pdf');
+        window.open(pdf);
+      }
+    }
+  }
 
 </script>
 
@@ -63,3 +76,6 @@
  }
 
 </style>
+
+
+@click="openResume()"
