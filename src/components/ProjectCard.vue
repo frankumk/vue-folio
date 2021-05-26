@@ -1,12 +1,14 @@
 <template>
   <v-col cols="3">
       <v-card
+        height="100%"
         hover
         tile
         raised
-        href="https://www.google.com"
+        :href="link"
+        target="_blank"
       >
-        <v-img :src="image" :alt="name" height="200px">
+        <v-img :src="image" :alt="name" height="200px" position="left">
         </v-img>
         <v-card-title>
           {{name}}
@@ -24,7 +26,8 @@
     props: [
       'image',
       'name',
-      'description'
+      'description',
+      'link'
     ]
 
   }

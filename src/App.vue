@@ -16,6 +16,7 @@
           <div id="main">
             <About />
             <Projects />
+            <Skills />
           </div>
 
         </v-container>
@@ -48,6 +49,7 @@
 import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
+import Skills from './components/Skills.vue'
 
   export default{
 
@@ -63,7 +65,8 @@ import Projects from './components/Projects.vue'
     components: {
       Header,
       About,
-      Projects
+      Projects,
+      Skills
     }
   }
 
