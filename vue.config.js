@@ -11,5 +11,6 @@ module.exports = {
           name: 'assets/pdf/[name].[hash:8].[ext]'
         })
 
-  }
+  },
+  publicPath: '/vue-folio/'
 }
