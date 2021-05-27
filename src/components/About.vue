@@ -7,7 +7,7 @@
         md="4"
       ></v-col>
         <v-row class="ma-n3" align="center" justify="center">
-          <v-col md="6">
+          <v-col md="6" sm="12">
             <p id="intro">Hi My Name is</p>
             <h1 id="fullname">Kayla Frankum</h1>
             <h2>I like to build things.</h2>
@@ -21,7 +21,7 @@
             <h4 id="slogan">"I am not what happened to me. I am who I choose to become."</h4>
           </v-col>
 
-          <v-col md="6">
+          <v-col md="6" sm="12">
             <v-img id="my-photo" src="../assets/JoshuaT.jpg" alt="picture of me" />
           </v-col>
         </v-row>
